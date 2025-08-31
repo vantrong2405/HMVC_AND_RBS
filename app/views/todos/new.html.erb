@@ -1,0 +1,13 @@
+<%= render 'shared/flash', errors: @form&.errors&.full_messages || [] %>
+
+<%= form_with scope: :todo, url: todos_path, method: :post do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :priority %>
+  <%= f.select :priority, options_for_select(Todos::NewForm.priority.values.map { |priority| [priority.humanize, priority] }) %>
+  <%= f.label :status %>
+  <%= f.select :status, options_for_select(Todos::NewForm.status.values.map { |status| [status.humanize, status] }) %>
+  <%= f.submit "Create" %>
+<% end %>

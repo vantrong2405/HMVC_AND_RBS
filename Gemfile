@@ -10,6 +10,7 @@ gem "puma", "6.4.2"
 gem "rack-cors"
 gem "rails", "~> 8.0.2"
 gem "rbs", "3.4.4"
+gem 'rbs_rails', '~> 0.12.1'
 gem "redis", "5.4.1"
 gem "rubocop"
 gem "sidekiq", "8.0.6"

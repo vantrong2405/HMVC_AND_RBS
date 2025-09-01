@@ -259,6 +259,9 @@ GEM
     rake (13.2.1)
     rbs (3.4.4)
       abbrev
+    rbs_rails (0.12.1)
+      parser
+      rbs (>= 1)
     rdoc (6.13.1)
       psych (>= 4.0.0)
     redis (5.4.1)
@@ -433,6 +436,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 8.0.2)
   rbs (= 3.4.4)
+  rbs_rails (~> 0.12.1)
   redis (= 5.4.1)
   rubocop
   rubocop-rails-omakase

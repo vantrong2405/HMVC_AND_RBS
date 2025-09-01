@@ -4,10 +4,10 @@
 # Creator: trongdn2405@gmail.com
 
 class Todos::CreateForm < ApplicationForm
-  attribute :title
-  attribute :description
-  attribute :priority
-  attribute :status
+  attribute :title, :string
+  attribute :description, :string
+  attribute :priority, :string
+  attribute :status, :string
 
   validates :title, presence: true
   validates :description, presence: true

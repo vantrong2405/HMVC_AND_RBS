@@ -4,5 +4,16 @@
 # Creator: trongdn2405@gmail.com
 
 class Todos::EditOperation < ApplicationOperation
-  def call; end
+  attr_reader :form
+
+  def call
+    step_get_todo
+  end
+
+  private
+
+  def step_get_todo
+    @todo = Todo.find(params[:id])
+    @form = Todos::EditForm.new(@todo.attributes)
+  end
 end

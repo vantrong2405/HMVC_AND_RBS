@@ -8,12 +8,16 @@ class TodosController < ApplicationController
   def index
     operator = Todos::IndexOperation.new(params)
     operator.call
+
+    @form = operator.form
   end
 
   # [GET]...
   def show
     operator = Todos::ShowOperation.new(params)
     operator.call
+
+    @form = operator.form
   end
 
   # [GET]...
@@ -38,17 +42,25 @@ class TodosController < ApplicationController
   def edit
     operator = Todos::EditOperation.new(params)
     operator.call
+
+    @form = operator.form
   end
 
   # [PUT]...
   def update
     operator = Todos::UpdateOperation.new(params)
     operator.call
+    @form = operator.form
+    return render :new, status: :unprocessable_entity if @form.errors.present?
+
+    redirect_to todos_path, notice: "Todo updated successfully"
   end
 
   # [DELETE]...
   def destroy
     operator = Todos::DestroyOperation.new(params)
     operator.call
+
+    redirect_to todos_path, notice: "Todo deleted successfully"
   end
 end

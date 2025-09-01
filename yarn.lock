@@ -332,6 +332,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rails/ujs@npm:^7.1.3-4":
+  version: 7.1.502
+  resolution: "@rails/ujs@npm:7.1.502"
+  checksum: 187e3ef1e8931ca103f9b50defc613ebeffee26c60b9dbbb40d1260a58cc8bdcd1f45e7caf778542fdf2cd3c8bda0f9eec2524824147a24988eef6f5801697ae
+  languageName: node
+  linkType: hard
+
 "@rollup/rollup-android-arm-eabi@npm:4.41.0":
   version: 4.41.0
   resolution: "@rollup/rollup-android-arm-eabi@npm:4.41.0"
@@ -485,6 +492,7 @@ __metadata:
   dependencies:
     "@hotwired/stimulus": ^3.2.2
     "@hotwired/turbo-rails": ^8.0.13
+    "@rails/ujs": ^7.1.3-4
     autoprefixer: ^10.4.21
     chart.js: ^4.4.9
     chartkick: ^5.0.1

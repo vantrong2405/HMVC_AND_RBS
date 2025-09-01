@@ -10,6 +10,8 @@ class ApplicationForm
   include ActiveModel::Attributes
   include ActiveModel::Validations::Callbacks
 
+  extend Enumerize
+
   def initialize(attributes = {})
     self.class.attribute_names.each do |column|
       self.class.attribute(column.to_sym)

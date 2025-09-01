@@ -23,6 +23,7 @@ gem "thruster", require: false
 gem "turbo-rails", "2.0.16"
 gem "tzinfo-data", platforms: %i[windows jruby]
 gem "vite_rails", "3.0.19"
+gem "rake", "~> 13.3"
 
 group :development, :test do
   gem "brakeman", "~> 7.1.0", require: false
@@ -30,6 +31,7 @@ group :development, :test do
   gem "hmvc-rails", "1.0.4"
   gem "rubocop-rails-omakase", require: false
   gem "ruby-lsp"
+  gem "solargraph"
 end
 
 group :development do

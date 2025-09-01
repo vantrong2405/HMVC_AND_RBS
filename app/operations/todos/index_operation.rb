@@ -4,5 +4,15 @@
 # Creator: trongdn2405@gmail.com
 
 class Todos::IndexOperation < ApplicationOperation
-  def call; end
+  attr_reader :form
+
+  def call
+    step_get_todos
+  end
+
+  private
+
+  def step_get_todos
+    @form = Todo.all
+  end
 end

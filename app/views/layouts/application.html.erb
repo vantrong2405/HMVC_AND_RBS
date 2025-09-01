@@ -17,10 +17,11 @@
 
   <%= vite_stylesheet_tag "application.css" %>
   <%= vite_client_tag %>
-  <%= vite_javascript_tag 'application' %>
+  <%= vite_javascript_tag 'javascript/application' %>
   </head>
 
   <body>
+    <%= render 'shared/flash', errors: [] %>
     <%= yield %>
   </body>
 </html>

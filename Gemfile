@@ -9,7 +9,7 @@ gem "pg", "1.6.1"
 gem "puma", "6.4.2"
 gem "rack-cors"
 gem "rails", "~> 8.0.2"
-gem "rbs", "3.4.4"
+gem "rbs"
 gem "redis", "5.4.1"
 gem "rubocop"
 gem "sidekiq", "8.0.6"
@@ -23,7 +23,7 @@ gem "thruster", require: false
 gem "turbo-rails", "2.0.16"
 gem "tzinfo-data", platforms: %i[windows jruby]
 gem "vite_rails", "3.0.19"
-gem "rake", "~> 13.3"
+gem "rake", "13.3"
 
 group :development, :test do
   gem "brakeman", "~> 7.1.0", require: false
@@ -36,6 +36,7 @@ end
 
 group :development do
   gem "web-console"
+  gem "steep"
 end
 
 group :test do

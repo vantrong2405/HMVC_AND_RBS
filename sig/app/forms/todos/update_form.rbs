@@ -1,2 +1,5 @@
-class Todos::UpdateForm < ApplicationForm
+module ::Todos
+end
+
+class ::Todos::UpdateForm < ::ApplicationForm
 end

@@ -1,6 +1,9 @@
 class TodosController < ApplicationController
   @form: untyped
 
+  # Route helper
+  def todos_path: (*untyped) -> untyped
+
   # [GET]...
   def index: () -> Todo
 

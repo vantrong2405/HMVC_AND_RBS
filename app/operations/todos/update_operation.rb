@@ -22,7 +22,11 @@ class Todos::UpdateOperation < ApplicationOperation
 
   def step_update_todo
     @todo = Todo.find(params[:id])
-    @todo.update(permit_params)
+    if @todo.present?
+      @todo.update(permit_params)
+    else
+      @todo = Todo.new(permit_params)
+    end
   end
 
   def permit_params

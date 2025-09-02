@@ -1,2 +1,24 @@
 class Todo < ApplicationRecord
+  # ActiveRecord finder shorthand used in controllers/views
+  def self.last: () -> (Todo)
+  def self.last!: () -> Todo
+
+  # Attributes inferred from db/schema.rb
+  def title: () -> (String)
+  def title=: ((String)) -> (String)
+
+  def description: () -> (String)
+  def description=: ((String)) -> (String)
+
+  def priority: () -> Integer
+  def priority=: (Integer) -> Integer
+
+  def status: () -> Integer
+  def status=: (Integer) -> Integer
+
+  def created_at: () -> (Time)
+  def updated_at: () -> (Time)
+
+  # enumerize DSL
+  def self.enumerize: (*untyped) -> untyped
 end

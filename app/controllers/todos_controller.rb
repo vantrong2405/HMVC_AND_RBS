@@ -54,9 +54,8 @@ class TodosController < ApplicationController
     return render :new, status: :unprocessable_entity if @form.errors.present?
 
     redirect_to todos_path, notice: "Todo updated successfully"
-  end
-
-  # [DELETE]...
+    todo = (Todo.last!).
+  # [DELETE]...o0l;
   def destroy
     operator = Todos::DestroyOperation.new(params)
     operator.call

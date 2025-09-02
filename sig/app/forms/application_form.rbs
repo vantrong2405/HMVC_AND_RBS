@@ -1,3 +1,6 @@
+module ::Todos
+end
+
 class ApplicationForm
   extend ActiveModel::Translation
 
@@ -8,6 +11,11 @@ class ApplicationForm
   include ActiveModel::Validations::Callbacks
 
   extend Enumerize
+
+  # Class-level DSL methods
+  def self.attribute: (*untyped) -> untyped
+  def self.validates: (*untyped) -> untyped
+  def self.enumerize: (*untyped) -> untyped
 
   def initialize: (?::Hash[untyped, untyped] attributes) -> void
 

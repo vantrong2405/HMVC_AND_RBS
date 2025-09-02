@@ -1,17 +1,19 @@
-class Todos::CreateOperation < ApplicationOperation
-  @form: untyped
+module Todos
+  class CreateOperation < ::ApplicationOperation
+    @form: untyped
 
-  @todo: untyped
+    @todo: untyped
 
-  attr_reader form: untyped
+    attr_reader form: untyped
 
-  def call: () -> (nil | untyped)
+    def call: () -> (nil | untyped)
 
-  private
+    private
 
-  def step_build_form: () { () -> untyped } -> (nil | untyped)
+    def step_build_form: () { () -> untyped } -> (nil | untyped)
 
-  def step_create_todo: () -> untyped
+    def step_create_todo: () -> untyped
 
-  def permit_params: () -> untyped
+    def permit_params: () -> untyped
+  end
 end

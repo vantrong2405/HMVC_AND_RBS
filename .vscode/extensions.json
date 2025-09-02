@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "Shopify.ruby-lsp"
+  ],
+  "unwantedRecommendations": [
+    "castwide.solargraph",
+    "rebornix.Ruby",
+    "wingrunr21.vscode-ruby"
+  ]
+} 

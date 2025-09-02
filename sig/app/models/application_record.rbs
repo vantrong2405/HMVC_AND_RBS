@@ -1,3 +1,15 @@
 class ApplicationRecord < ActiveRecord::Base
   extend Enumerize
+
+  # Common finder methods available on all models
+  def self.first: () -> (instance | nil)
+  def self.first!: () -> instance
+  def self.second: () -> (instance | nil)
+  def self.second!: () -> instance
+  def self.last: () -> (instance | nil)
+  def self.last!: () -> instance
+
+  def self.find: (untyped id) -> instance
+  def self.find_by: (*untyped) -> (instance | nil)
+  def self.where: (*untyped) -> untyped
 end

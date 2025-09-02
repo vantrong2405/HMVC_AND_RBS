@@ -1,2 +1,5 @@
-class Todos::CreateForm < ApplicationForm
+module ::Todos
+end
+
+class ::Todos::CreateForm < ::ApplicationForm
 end

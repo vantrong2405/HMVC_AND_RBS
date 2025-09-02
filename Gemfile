@@ -8,8 +8,7 @@ gem "kamal", require: false
 gem "pg", "1.6.1"
 gem "puma", "6.4.2"
 gem "rack-cors"
-gem "rails", "~> 8.0.2"
-gem "rbs"
+gem "rails", "8.0.2"
 gem "redis", "5.4.1"
 gem "rubocop"
 gem "sidekiq", "8.0.6"
@@ -26,7 +25,7 @@ gem "vite_rails", "3.0.19"
 gem "rake", "13.3"
 
 group :development, :test do
-  gem "brakeman", "~> 7.1.0", require: false
+  gem "brakeman", "7.1.0", require: false
   gem "debug", platforms: %i[mri windows], require: "debug/prelude"
   gem "hmvc-rails", "1.0.4"
   gem "rubocop-rails-omakase", require: false
@@ -37,6 +36,9 @@ end
 group :development do
   gem "web-console"
   gem "steep"
+  gem "ruby-lsp-rails", "0.4.8"
+  gem "rbs_rails", "0.12.1"
+  gem "rbs"
 end
 
 group :test do

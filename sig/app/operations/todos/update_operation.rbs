@@ -1,0 +1,17 @@
+class Todos::UpdateOperation < ApplicationOperation
+  @form: untyped
+
+  @todo: untyped
+
+  attr_reader form: untyped
+
+  def call: () -> (nil | untyped)
+
+  private
+
+  def step_build_form: () { () -> untyped } -> (nil | untyped)
+
+  def step_update_todo: () -> untyped
+
+  def permit_params: () -> untyped
+end

@@ -1,11 +1,11 @@
 class Todos::IndexOperation < ApplicationOperation
-  @form: untyped
+  @form: Todos::NewForm
 
-  attr_reader form: untyped
+  attr_reader form: Todos::NewForm
 
-  def call: () -> untyped
+  def call: () -> void
 
   private
 
-  def step_get_todos: () -> untyped
+  def step_get_todos: () -> void
 end

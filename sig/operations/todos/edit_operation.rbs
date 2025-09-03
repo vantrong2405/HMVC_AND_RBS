@@ -1,13 +1,12 @@
 class Todos::EditOperation < ApplicationOperation
-  @todo: untyped
+  @todo: Todo
+  @form: Todos::EditForm
 
-  @form: untyped
+  attr_reader form: Todos::EditForm
 
-  attr_reader form: untyped
-
-  def call: () -> untyped
+  def call: () -> void
 
   private
 
-  def step_get_todo: () -> untyped
+  def step_get_todo: () -> void
 end

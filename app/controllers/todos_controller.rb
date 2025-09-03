@@ -10,8 +10,6 @@ class TodosController < ApplicationController
     operator.call
 
     @form = operator.form
-
-    Todo.last.
   end
 
   # [GET]...

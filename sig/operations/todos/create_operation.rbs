@@ -1,17 +1,16 @@
 class Todos::CreateOperation < ApplicationOperation
-  @form: untyped
+  @form: Todos::CreateForm
+  @todo: Todo
 
-  @todo: untyped
+  attr_reader form: Todos::CreateForm
 
-  attr_reader form: untyped
-
-  def call: () -> (nil | untyped)
+  def call: () -> (nil | Todo)
 
   private
 
-  def step_build_form: () { () -> untyped } -> (nil | untyped)
+  def step_build_form: () { () -> void } -> (nil | Todo)
 
-  def step_create_todo: () -> untyped
+  def step_create_todo: () -> Todo
 
-  def permit_params: () -> untyped
+  def permit_params: () -> Hash[Symbol, untyped]
 end

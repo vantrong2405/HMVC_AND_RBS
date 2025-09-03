@@ -1,11 +1,11 @@
 class Todos::NewOperation < ApplicationOperation
-  @form: untyped
+  @form: Todos::NewForm
 
-  attr_reader form: untyped
+  attr_reader form: Todos::NewForm
 
-  def call: () -> untyped
+  def call: () -> void
 
   private
 
-  def step_build_form: () -> untyped
+  def step_build_form: () -> void
 end

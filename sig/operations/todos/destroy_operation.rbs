@@ -1,11 +1,11 @@
 class Todos::DestroyOperation < ApplicationOperation
-  @todo: untyped
+  @todo: Todo
 
-  attr_reader todo: untyped
+  attr_reader todo: Todo
 
-  def call: () -> untyped
+  def call: () -> Todo
 
   private
 
-  def step_destroy_todo: () -> untyped
+  def step_destroy_todo: () -> Todo
 end

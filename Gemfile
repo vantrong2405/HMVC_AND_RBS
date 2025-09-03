@@ -35,9 +35,7 @@ end
 
 group :development do
   gem "web-console"
-  gem "steep"
   gem "ruby-lsp-rails", "0.4.8"
-  gem "rbs_rails", "0.12.1"
   gem "rbs"
 end
 

@@ -1,0 +1,11 @@
+class Todos::DestroyOperation < ApplicationOperation
+  @todo: untyped
+
+  attr_reader todo: untyped
+
+  def call: () -> untyped
+
+  private
+
+  def step_destroy_todo: () -> untyped
+end
